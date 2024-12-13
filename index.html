@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick Roll</title>
+    <script>
+        function playRickRoll() {
+            var rickrollWindow = window.open("", "Rick Roll", "width=600,height=400");
+            rickrollWindow.document.write(`
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            `);
+            alert("You've been Rick Rolled!");
+        }
+        
+        function stopRickRoll() {
+            setInterval(function() {
+                var rickrollWindow = window.open("", "Rick Roll", "width=600,height=400");
+                rickrollWindow.document.write(`
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                `);
+            }, 2000);
+        }
+
+        window.onload = playRickRoll;
+    </script>
+</head>
+<body>
+    <h1>Need it to stop? <a href="#" onclick="stopRickRoll()">Click here to stop it.</a></h1>
+</body>
+</html>
