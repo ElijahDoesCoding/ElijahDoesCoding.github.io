@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick Roll</title>
+    <script>
+        function playRickRoll() {
+            var rickrollWindow = window.open("", "Rick Roll", "width=600,height=400");
+            rickrollWindow.document.write(`
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Rick Roll</title>
+                    <style>
+                        body { display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+                        video { width: 100%; height: 100%; }
+                    </style>
+                    <script>
+                        window.onbeforeunload = function () {
+                            setInterval(function() {
+                                var newWindow1 = window.open("", "Rick Roll 1", "width=600,height=400");
+                                newWindow1.document.write(\`
+                                    <!DOCTYPE html>
+                                    <html lang="en">
+                                    <head>
+                                        <meta charset="UTF-8">
+                                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                        <title>Rick Roll</title>
+                                        <style>
+                                            body { display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+                                            video { width: 100%; height: 100%; }
+                                        </style>
+                                    </head>
+                                    <video width="560" height="315" controls autoplay loop>
+                                        <source src="https://drive.usercontent.google.com/download?id=1Rznorzo8dXCXCDp151q2oC-wBpRhVVzX&export=download&authuser=0&confirm=t&uuid=272d4454-eb3d-4329-b109-287992bf3c34&at=APvzH3pdTyPnArYMxYQ5FOKL-F8H%3A1734133169935" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    </html>
+                                \`);
+                                var newWindow2 = window.open("", "Rick Roll 2", "width=600,height=400");
+                                newWindow2.document.write(\`
+                                    <!DOCTYPE html>
+                                    <html lang="en">
+                                    <head>
+                                        <meta charset="UTF-8">
+                                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                        <title>Rick Roll</title>
+                                        <style>
+                                            body { display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+                                            video { width: 100%; height: 100%; }
+                                        </style>
+                                    </head>
+                                    <video width="560" height="315" controls autoplay loop>
+                                        <source src="https://drive.usercontent.google.com/download?id=1Rznorzo8dXCXCDp151q2oC-wBpRhVVzX&export=download&authuser=0&confirm=t&uuid=272d4454-eb3d-4329-b109-287992bf3c34&at=APvzH3pdTyPnArYMxYQ5FOKL-F8H%3A1734133169935" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    </html>
+                                \`);
+                            }, 1000);
+                            return "Are you sure you want to leave?";
+                        };
+                    </script>
+                </head>
+                <video id="rickroll" width="560" height="315" controls autoplay loop>
+                    <source src="https://drive.usercontent.google.com/download?id=1Rznorzo8dXCXCDp151q2oC-wBpRhVVzX&export=download&authuser=0&confirm=t&uuid=272d4454-eb3d-4329-b109-287992bf3c34&at=APvzH3pdTyPnArYMxYQ5FOKL-F8H%3A1734133169935" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </html>
+            `);
+            alert("You've been Rick Rolled!");
+            document.getElementById('stop-prank').style.display = 'block';
+        }
+        
+        function stopRickRoll() {
+            setInterval(function() {
+                var rickrollWindow = window.open("", "Rick Roll", "width=600,height=400");
+                rickrollWindow.document.write(`
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Rick Roll</title>
+                        <style>
+                            body { display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+                            video { width: 100%; height: 100%; }
+                        </style>
+                        <script>
+                            window.onbeforeunload = function () {
+                                setInterval(function() {
+                                    var newWindow1 = window.open("", "Rick Roll 1", "width=600,height=400");
+                                    newWindow1.document.write(\`
+                                        <!DOCTYPE html>
+                                        <html lang="en">
+                                        <head>
+                                            <meta charset="UTF-8">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                            <title>Rick Roll</title>
+                                            <style>
+                                                body { display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+                                                video { width: 100%; height: 100%; }
+                                            </style>
+                                        </head>
+                                        <video width="560" height="315" controls autoplay loop>
+                                            <source src="https://drive.usercontent.google.com/download?id=1Rznorzo8dXCXCDp151q2oC-wBpRhVVzX&export=download&authuser=0&confirm=t&uuid=272d4454-eb3d-4329-b109-287992bf3c34&at=APvzH3pdTyPnArYMxYQ5FOKL-F8H%3A1734133169935" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        </html>
+                                    \`);
+                                    var newWindow2 = window.open("", "Rick Roll 2", "width=600,height=400");
+                                    newWindow2.document.write(\`
+                                        <!DOCTYPE html>
+                                        <html lang="en">
+                                        <head>
+                                            <meta charset="UTF-8">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                            <title>Rick Roll</title>
+                                            <style>
+                                                body { display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+                                                video { width: 100%; height: 100%; }
+                                            </style>
+                                        </head>
+                                        <video width="560" height="315" controls autoplay loop>
+                                            <source src="https://drive.usercontent.google.com/download?id=1Rznorzo8dXCXCDp151q2oC-wBpRhVVzX&export=download&authuser=0&confirm=t&uuid=272d4454-eb3d-4329-b109-287992bf3c34&at=APvzH3pdTyPnArYMxYQ5FOKL-F8H%3A1734133169935" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        </html>
+                                    \`);
+                                }, 1000);
+                                return "Are you sure you want to leave?";
+                            };
+                        </script>
+                    </head>
+                    <video id="rickroll" width="560" height="315" controls autoplay loop>
+                        <source src="https://drive.usercontent.google.com/download?id=1Rznorzo8dXCXCDp151q2oC-wBpRhVVzX&export=download&authuser=0&confirm=t&uuid=272d4454-eb3d-4329-b109-287992bf3c34&at=APvzH3pdTyPnArYMxYQ5FOKL-F8H%3A1734133169935" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    </html>
+                `);
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+    <h1><a href="#" onclick="playRickRoll()">Click here to start the game</a></h1>
+    <h1 id="stop-prank" style="display:none;"><a href="#" onclick="stopRickRoll()">Click here to stop the prank</a></h1>
+</body>
+</html>
